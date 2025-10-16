@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy 5 Months, Bhuvi 💖</title>
+  <style>
+    :root{
+      --bg1:#0f172a;
+      --bg2:#0b1220;
+      --accent:#ff6b8a;
+      --accent2:#ffb4c6;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;height:100vh;display:flex;align-items:center;justify-content:center;
+      background:linear-gradient(180deg,var(--bg1),var(--bg2));
+      color:#fff;font-family:system-ui, sans-serif;text-align:center;padding:20px;
+      overflow:hidden;
+    }
+    .card{
+      background:rgba(255,255,255,0.05);padding:40px;border-radius:16px;
+      max-width:700px;width:100%;box-shadow:0 0 20px rgba(0,0,0,0.3);
+      position:relative;z-index:1;
+    }
+    h1{font-size:2.5rem;margin-bottom:10px;color:var(--accent2)}
+    p{font-size:1.1rem;line-height:1.6;color:rgba(255,255,255,0.85)}
+    button{
+      background:linear-gradient(90deg,var(--accent),var(--accent2));
+      border:none;padding:10px 20px;border-radius:8px;font-weight:600;
+      margin-top:20px;cursor:pointer;color:#0b1220;
+    }
+
+    /* floating heart shapes */
+    .hearts{pointer-events:none;position:absolute;inset:0;overflow:hidden;z-index:0;}
+    .hearts i{
+      position:absolute;
+      width:20px;height:20px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      transform:rotate(-45deg);
+      animation:floatUp linear infinite;
+    }
+    .hearts i::before,
+    .hearts i::after{
+      content:'';
+      position:absolute;
+      width:20px;height:20px;
+      background:linear-gradient(135deg,var(--accent),var(--accent2));
+      border-radius:50%;
+    }
+    .hearts i::before{top:-10px;left:0;}
+    .hearts i::after{left:10px;top:0;}
+
+    .hearts i:nth-child(1){left:10%;animation-duration:9s;animation-delay:0s;}
+    .hearts i:nth-child(2){left:25%;animation-duration:11s;animation-delay:1s;}
+    .hearts i:nth-child(3){left:40%;animation-duration:8s;animation-delay:2s;}
+    .hearts i:nth-child(4){left:55%;animation-duration:10s;animation-delay:0.4s;}
+    .hearts i:nth-child(5){left:70%;animation-duration:12s;animation-delay:0.9s;}
+    .hearts i:nth-child(6){left:85%;animation-duration:7.5s;animation-delay:1.6s;}
+
+    @keyframes floatUp{
+      0%{transform:translateY(110vh) rotate(-45deg) scale(0.7);opacity:0}
+      10%{opacity:0.9}
+      50%{transform:translateY(40vh) rotate(-45deg) scale(1);opacity:0.95}
+      100%{transform:translateY(-30vh) rotate(-45deg) scale(0.6);opacity:0}
+    }
+  </style>
+</head>
+<body>
+  <div class="hearts" aria-hidden="true">
+    <i></i><i></i><i></i><i></i><i></i><i></i>
+  </div>
+  <div class="card">
+    <h1>Happy 5 Months, Bhuvi 💖</h1>
+    <p id="message">
+    Hey Baby, Happy 5 Months to us! Every Moment with you felt like a beautiful dream come true, and i cant wait to create more memories together. you have been my safe place, my happiness and my everything. I love you more than words can explain.I still cant believe i get to call you MINE , I have said it a thousand times and will continue to say it i dont know what good deeds i must have done to deserve someone so perfect as you , you are the best I am so thankfull and happy that i found my girlfriend and best friend in one person (YOU) , TO the end of eternity be with me and mine i am so happy with you thank you for being there in my life , I wanna give you all my love sweetheart , Thank you for making me feel special and give me the love and care i didnt even know i needed , you turn my ordinary days special , everyday the message pop up from "MI AMOR" just lights my face more than a million suns , whenever i feel sad or low you help me cheer up and lift my mood .   
+    </p>
+    <button onclick="alert('I love you so much, Babbyy 💕')">Click Me</button>
+  </div>
+</body>
+</html>
